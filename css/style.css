@@ -19,19 +19,23 @@ display: flex;
 justify-content: space-around;
 background-color: rgba(0, 0, 0, 0.2);
 border: 2px solid silver;
-padding: 15px;
 text-transform: uppercase;
+}
+#car{
+  color: red;
 }
 .logo  {
   font-size: 35px;
+  color: white
 }
 .logo::before {
   content:url(../images/Icon\ Logo\ Normal.svg);
-  position: relative;
+  vertical-align: middle;
+  padding: 5px;
 }
 .menu {
   display: flex;
-  gap: 20%;
+  gap: 15%;
   align-items: center;
 
 }
