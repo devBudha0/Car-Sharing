@@ -14,8 +14,7 @@ body {
 }
 
 .main {
-min-width: 1088px;
-min-height: 1088px;
+min-height: 100vh;
 background-image: url(../images/Image.jpg);
 background-repeat: no-repeat;
 background-size: cover;
@@ -65,6 +64,7 @@ a:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
   max-width: 930px;
   font-family: "Nunito_Sans";
   color: white;
