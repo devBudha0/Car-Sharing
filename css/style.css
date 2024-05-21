@@ -12,8 +12,18 @@ body {
   font-family:'Open_Sans';
   src: url('../Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
 }
-/* NAVIGATION BAR */
-header {
+
+.main {
+min-width: 100%;
+min-height: 1088px;
+background-image: url(../images/Image.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+/* margin: 0 auto */
+}
+
+/* HEADER */
+.page-header {
 font-family: "Nunito_Sans";
 display: flex;
 justify-content: space-around;
@@ -24,22 +34,23 @@ text-transform: uppercase;
 #car{
   color: red;
 }
-.logo  {
+.logo, .logo::before  {
+  display: flex;
+  align-items: center;
   font-size: 35px;
   color: white
 }
 .logo::before {
   content:url(../images/Icon\ Logo\ Normal.svg);
-  vertical-align: middle;
-  padding: 5px;
+  position: relative;
+  bottom: -10%;
 }
-.menu {
+.page-nav {
   display: flex;
-  /* gap: 20%; */
   align-items: center;
-
 }
 a {
+  display: flex;
   font-size: 20px;
   color: white;
   text-decoration: none;
@@ -48,12 +59,5 @@ a {
 a:hover{
   background-color: rgba(255, 255, 255, 0.1);
 }
-.container {
 
-min-width: 100%;
-min-height: 1088px;
-background-image: url(../images/Image.jpg);
-background-repeat: no-repeat;
-background-size: cover
-;
-}
+/* BANNER */
