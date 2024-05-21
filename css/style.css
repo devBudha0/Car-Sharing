@@ -5,20 +5,20 @@ body {
 
 @font-face {
   font-family:'Nunito_Sans';
-  src: url('../../../../Fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+  src: url('../Fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
 }
 
 @font-face {
   font-family:'Open_Sans';
-  src: url('../../../../Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+  src: url('../Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
 }
-
+/* NAVIGATION BAR */
 header {
 font-family: "Nunito_Sans";
 display: flex;
 justify-content: space-around;
-background-color: rgba(0, 0, 0, 0.2);
-border: 2px solid silver;
+background-color: rgba(0, 0, 0, 0.5);
+border: 2px solid rgba(192, 192, 192 , 0.3);
 text-transform: uppercase;
 }
 #car{
@@ -35,7 +35,7 @@ text-transform: uppercase;
 }
 .menu {
   display: flex;
-  gap: 15%;
+  /* gap: 20%; */
   align-items: center;
 
 }
@@ -43,4 +43,17 @@ a {
   font-size: 20px;
   color: white;
   text-decoration: none;
+  padding: 35px;
+}
+a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.container {
+
+min-width: 100%;
+min-height: 1088px;
+background-image: url(../images/Image.jpg);
+background-repeat: no-repeat;
+background-size: cover
+;
 }
