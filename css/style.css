@@ -66,4 +66,10 @@ a:hover{
   align-items: center;
   flex-direction: column;
   max-width: 930px;
+  font-family: "Nunito_Sans";
+  color: white;
+}
+
+.banner h1 {
+  text-transform: uppercase;
 }
