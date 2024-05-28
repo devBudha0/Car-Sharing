@@ -15,17 +15,17 @@ body {
 
 .main {
 height: 1088px;
-/* width: 1088px; */
-background-image: url(../images/Image.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+background:
+  linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+  url(../images/Image.jpg) center/cover;
 }
 
-
-/* .main::before {
-  background-color: rgba(0, 0, 0, 1);  <--- testing
-} */
-
+.banner::after {
+  content: url(../images/Icon\ Arrow\ Down.svg);
+  position: absolute;
+  bottom: 10;
+  right: 50%;
+}
 
 /* HEADER */
 .page--header {
@@ -92,6 +92,8 @@ a{
 .banner p{
   padding-bottom: 35px;
 }
+
+
 /* BANNER BUTTONS  */
 .btn--container {
   display: flex;
