@@ -14,17 +14,14 @@ body {
 }
 
 .main {
-height: 1088px;
+height: 100vh;
 background:
   linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url(../images/Image.jpg) center/cover;
 }
 
-.banner::after {
-  content: url(../images/Icon\ Arrow\ Down.svg);
-  position: absolute;
-  bottom: 10;
-  right: 50%;
+.content {
+  max-width: 930px;
 }
 
 /* HEADER */
@@ -75,7 +72,7 @@ a{
   flex-direction: column;
   margin: auto;
   text-align: center;
-  max-width: 930px;
+  /* max-width: 930px; */
   font-family: "Nunito_Sans";
   color: white;
   height: 800px;
@@ -93,6 +90,18 @@ a{
   padding-bottom: 35px;
 }
 
+.banner::after {
+  content: url(../images/Icon\ Arrow\ Down.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -3.28%;
+  background-color: red;
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+}
 
 /* BANNER BUTTONS  */
 .btn--container {
@@ -119,4 +128,12 @@ a{
 .btn--secondary{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   color: #FF0000;
+}
+
+/* BLOG */
+.blog h2{
+  display: flex;
+  justify-content: center;
+  margin: 5%
+
 }
