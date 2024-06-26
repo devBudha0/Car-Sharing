@@ -96,7 +96,7 @@ a{
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -3.28%;
+  bottom: -2.1%;
   background-color: red;
   width: 55px;
   height: 55px;
@@ -134,6 +134,15 @@ a{
 .blog h2{
   display: flex;
   justify-content: center;
-  margin: 5%
+  margin: 5%;
+  font: normal normal bold 35px/47px "Nunito_Sans";
+}
+
+.blog h2::before {
+  display: inline-block;
+  border-top: 2px solid black;
+  content: "---";
+  position: relative;
+  left: 0px
 
 }
